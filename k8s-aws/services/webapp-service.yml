@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fleetman-webapp
+spec:
+  # This should match with the pod which you want to tie service and pod
+  selector:
+    app: webapp
+    release: "0-5"
+  ports:
+    - port: 80
+      nodePort: 30001
+  type: NodePort
