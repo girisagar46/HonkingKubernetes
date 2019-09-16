@@ -1,6 +1,13 @@
 ## Theory
 
-POD are the smallest unit of deployment in k8s. Generally container to pod ratio is 1:1 (i.e. one container inside a pod) but in some advance case, more than 2 container can run inside it.
+# Points to note:
+
+- POD are the smallest unit of deployment in k8s. Generally container to pod ratio is 1:1 (i.e. one container inside a pod) but in some advance case, more than 2 container can run inside it.
+- Pods are not visible outside the cluster
+- Pods are designed to be throw away things
+- Pods have short life time
+- Pods are regularly created and they die regularly
+- We treat pods like cattle, we don't treat like pets. If they die, we just replace it with another
 
 ## practical
 
